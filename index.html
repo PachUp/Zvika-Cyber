@@ -16,7 +16,7 @@
         <div class="bubble1 x1 bubble"></div>
         <div class="bubble2 x2 bubble"></div>
         <div class="bubble3 x3 bubble"></div>
-        <div class="bubble4 x4 bubble"></div>
+        <!--<div class="bubble4 x4 bubble"></div> -->
         <div class="bubble5 x5 bubble"></div>
         <div class="bubble6 x6 bubble"></div>
         <div class="bubble7 x7 bubble"></div>
@@ -146,6 +146,64 @@
           </div>
         </div>
       </div>
+      <div class="modal fade" id="DanModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="DanModalLabel">הברכה של דן</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+                לצביקה היקר, תודה רבה על כל השנים שלימדת אותנו. אני מודה על ההשקעה בלימוד שלנו ובהצלחתנו. היה לי כיף לבוא לשיעורים וללמוד דברים חדשים. תודה על העזרה והתמיכה במהלך העשייה על פרויקט הגמר. אני בטוח שבשנים הבאות התלמידים שלך יהנו להיות בשיעורים כמו שאנחנו נהננו. דן            </div>
+            <div class="modal-footer">
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="modal fade" id="YoavModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="YoavModalLabel">הברכה של יואב</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+                צביקה. תודה שישבתה איתי ועזרתה לי בשלוש השנים האלו            
+                <div class="modal-footer">
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <div class="modal fade" id="AdoramModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="AdoramModalLabel">הברכה של אדורם</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+                תודה רבה צביקה!
+                תודה רבה על שלוש השנים שבהם לימדת אותנו,
+                העברת לנו את החומר בכיתה בצורה מעניינת,
+                נתת לנו להתנסות בעצמנו ותמכת לאורך כל הדרך.
+                בזכות הלימוד וההכוונה שלך הצלחנו ליצור פרוייקטים מדהימים
+                ולהתקדם בתחום הסייבר.
+                לא יכולנו לבקש מורה יותר טוב להעביר איתו את השלוש שנים האלו.
+                אני מאחל לך הצלחה בהמשך כמורה ובכל דרך בה תבחר ללכת.
+                אדורם שובל :)
+                                <div class="modal-footer">
+            </div>
+          </div>
+        </div>
+      </div>
 
 </body>
 </html>
@@ -172,6 +230,15 @@ $(".bubble").on("click", function(){
     }
     else if(id_class == "bubble6"){
         $("#GalModal").modal("show");
+    }
+    else if(id_class == "bubble7"){
+        $("#DanModal").modal("show");
+    }
+    else if(id_class == "bubble8"){
+        $("#YoavModal").modal("show");
+    }
+    else if(id_class == "bubble9"){
+        $("#AdoramModal").modal("show");
     }
 });
 </script>
@@ -452,7 +519,127 @@ $(".bubble").on("click", function(){
     position: absolute;
     width: 180px;
 }
+.bubble7 {
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+    
+    -webkit-box-shadow: 0 20px 30px rgba(0, 0, 0, 0.2), inset 0px 10px 30px 5px rgba(255, 255, 255, 1);
+    -moz-box-shadow: 0 20px 30px rgba(0, 0, 0, 0.2), inset 0px 10px 30px 5px rgba(255, 255, 255, 1);
+    box-shadow: 0 20px 30px rgba(0, 0, 0, 0.2), inset 0px 10px 30px 5px rgba(255, 255, 255, 1);
+    
+    height: 200px;
+    position: absolute;
+    width: 200px;
+}
 
+.bubble7:after {
+    background: -moz-radial-gradient(center, ellipse cover,  rgba(255,255,255,0.5) 0%, rgba(255,255,255,0) 70%); /* FF3.6+ */
+    background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%,rgba(255,255,255,0.5)), color-stop(70%,rgba(255,255,255,0))); /* Chrome,Safari4+ */
+    background: -webkit-radial-gradient(center, ellipse cover,  rgba(255,255,255,0.5) 0%,rgba(255,255,255,0) 70%); /* Chrome10+,Safari5.1+ */
+    background: -o-radial-gradient(center, ellipse cover,  rgba(255,255,255,0.5) 0%,rgba(255,255,255,0) 70%); /* Opera 12+ */
+    background: -ms-radial-gradient(center, ellipse cover,  rgba(255,255,255,0.5) 0%,rgba(255,255,255,0) 70%); /* IE10+ */
+    background: radial-gradient(ellipse at center,  rgba(255,255,255,0.5) 0%,rgba(255,255,255,0) 70%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#80ffffff', endColorstr='#00ffffff',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+    
+    -webkit-box-shadow: inset 0 20px 30px rgba(255, 255, 255, 0.3);
+    -moz-box-shadow: inset 0 20px 30px rgba(255, 255, 255, 0.3);
+    box-shadow: inset 0 20px 30px rgba(255, 255, 255, 0.3);
+    
+    content: "דן";
+    text-align: center;
+    height: 185px;
+    left: 10px;
+    padding-top: 70px;
+    font-size: 50px;
+    position: absolute;
+    width: 180px;
+}
+.bubble8 {
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+    
+    -webkit-box-shadow: 0 20px 30px rgba(0, 0, 0, 0.2), inset 0px 10px 30px 5px rgba(255, 255, 255, 1);
+    -moz-box-shadow: 0 20px 30px rgba(0, 0, 0, 0.2), inset 0px 10px 30px 5px rgba(255, 255, 255, 1);
+    box-shadow: 0 20px 30px rgba(0, 0, 0, 0.2), inset 0px 10px 30px 5px rgba(255, 255, 255, 1);
+    
+    height: 200px;
+    position: absolute;
+    width: 200px;
+}
+
+.bubble8:after {
+    background: -moz-radial-gradient(center, ellipse cover,  rgba(255,255,255,0.5) 0%, rgba(255,255,255,0) 70%); /* FF3.6+ */
+    background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%,rgba(255,255,255,0.5)), color-stop(70%,rgba(255,255,255,0))); /* Chrome,Safari4+ */
+    background: -webkit-radial-gradient(center, ellipse cover,  rgba(255,255,255,0.5) 0%,rgba(255,255,255,0) 70%); /* Chrome10+,Safari5.1+ */
+    background: -o-radial-gradient(center, ellipse cover,  rgba(255,255,255,0.5) 0%,rgba(255,255,255,0) 70%); /* Opera 12+ */
+    background: -ms-radial-gradient(center, ellipse cover,  rgba(255,255,255,0.5) 0%,rgba(255,255,255,0) 70%); /* IE10+ */
+    background: radial-gradient(ellipse at center,  rgba(255,255,255,0.5) 0%,rgba(255,255,255,0) 70%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#80ffffff', endColorstr='#00ffffff',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+    
+    -webkit-box-shadow: inset 0 20px 30px rgba(255, 255, 255, 0.3);
+    -moz-box-shadow: inset 0 20px 30px rgba(255, 255, 255, 0.3);
+    box-shadow: inset 0 20px 30px rgba(255, 255, 255, 0.3);
+    
+    content: "יואב";
+    text-align: center;
+    height: 185px;
+    left: 10px;
+    padding-top: 70px;
+    font-size: 50px;
+    position: absolute;
+    width: 180px;
+}
+
+.bubble9 {
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+    
+    -webkit-box-shadow: 0 20px 30px rgba(0, 0, 0, 0.2), inset 0px 10px 30px 5px rgba(255, 255, 255, 1);
+    -moz-box-shadow: 0 20px 30px rgba(0, 0, 0, 0.2), inset 0px 10px 30px 5px rgba(255, 255, 255, 1);
+    box-shadow: 0 20px 30px rgba(0, 0, 0, 0.2), inset 0px 10px 30px 5px rgba(255, 255, 255, 1);
+    
+    height: 200px;
+    position: absolute;
+    width: 200px;
+}
+
+.bubble9:after {
+    background: -moz-radial-gradient(center, ellipse cover,  rgba(255,255,255,0.5) 0%, rgba(255,255,255,0) 70%); /* FF3.6+ */
+    background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%,rgba(255,255,255,0.5)), color-stop(70%,rgba(255,255,255,0))); /* Chrome,Safari4+ */
+    background: -webkit-radial-gradient(center, ellipse cover,  rgba(255,255,255,0.5) 0%,rgba(255,255,255,0) 70%); /* Chrome10+,Safari5.1+ */
+    background: -o-radial-gradient(center, ellipse cover,  rgba(255,255,255,0.5) 0%,rgba(255,255,255,0) 70%); /* Opera 12+ */
+    background: -ms-radial-gradient(center, ellipse cover,  rgba(255,255,255,0.5) 0%,rgba(255,255,255,0) 70%); /* IE10+ */
+    background: radial-gradient(ellipse at center,  rgba(255,255,255,0.5) 0%,rgba(255,255,255,0) 70%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#80ffffff', endColorstr='#00ffffff',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+    
+    -webkit-box-shadow: inset 0 20px 30px rgba(255, 255, 255, 0.3);
+    -moz-box-shadow: inset 0 20px 30px rgba(255, 255, 255, 0.3);
+    box-shadow: inset 0 20px 30px rgba(255, 255, 255, 0.3);
+    
+    content: "אדורם";
+    text-align: center;
+    height: 185px;
+    left: 10px;
+    padding-top: 70px;
+    font-size: 50px;
+    position: absolute;
+    width: 180px;
+}
 /* ANIMATIONS */
 
 .x1 {
